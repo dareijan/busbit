@@ -1,160 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="analoginenkello.css" />
+    <link rel="stylesheet" href="busbits.css" />
+    <script src="kellonajanpaattely.js"></script>
+    <title>Busbit</title>
+  </head>
+  <body onload="aloitaAjanTutkiminen()">
 
-  <link rel="stylesheet" href="analoginenkello.css" />
+    <script src="analoginenkello.js"></script>
 
-  <title>Busbit</title>
-</head>
-<body>
-  <script src="analoginenkello.js"></script>
-
-  <table cellpadding="15" cesslpacing="15" border="0" width="100%">
-    <tr>
-      <td>
-        <div align="center">
-          <a href="indexAsmalampiLatostenmaki0731.html" target="paaframe">Aamulla kouluun 8:15:ksi</a>
-        </div>        
-      </td>
-      <td>
-        <div>
-          <a href="indexAsmalampiLatostenmaki0825.html" target="paaframe">Aamulla kouluun 9:05:ksi</a>
-        </div>        
-      </td>
-      <td>
-        <div>
-          <a href="indexLatostenmakiAsmapampi1320.html" target="paaframe">Iltapäivällä koulusta 13:15 jälkeen kotiini</a>
-        </div>        
-      </td>
-      <td>
-        <div>
-          <a href="indexLatostenmakiAsmapampi1420.html" target="paaframe">Iltapäivällä koulusta 14:15 jälkeen kotiin</a>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <iframe name="paaframe" src="indexAsmalampiLatostenmaki0731.html" 
-  width="95%" 
-  height="1200"
-  scrolling="yes"></iframe>
-
-<!--
-  <div class="watch quartz"align="center">
-    <div class="case"></div>
-    <div class="dial">
-      <div class="brand">TIMEX</div>
-      <div class="indiglo">INDIGLO</div>
-      <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <div class="twelve">
-        <div class="number"><span>1</span></div>
-        <div class="number"><span>2</span></div>
-        <div class="number"><span>3</span></div>
-        <div class="number"><span>4</span></div>
-        <div class="number"><span>5</span></div>
-        <div class="number"><span>6</span></div>
-        <div class="number"><span>7</span></div>
-        <div class="number"><span>8</span></div>
-        <div class="number"><span>9</span></div>
-        <div class="number"><span>10</span></div>
-        <div class="number"><span>11</span></div>
-        <div class="number"><span>12</span></div>
-      </div>
-      <div class="twenty">
-        <div class="number"><span>13</span></div>
-        <div class="number"><span>14</span></div>
-        <div class="number"><span>15</span></div>
-        <div class="number"><span>16</span></div>
-        <div class="number"><span>17</span></div>
-        <div class="number"><span>18</span></div>
-        <div class="number"><span>19</span></div>
-        <div class="number"><span>20</span></div>
-        <div class="number"><span>21</span></div>
-        <div class="number"><span>22</span></div>
-        <div class="number"><span>23</span></div>
-        <div class="number"><span>24</span></div>
-      </div>
-      <div class="hand-wrapper">
-        <div class="hours">
-          <div class="current">
-            <div class="hand"></div>
+    <table cellpadding="15" cesslpacing="15" border="0" width="100%">    
+      <tr>
+        <td>
+          <div align="center">Aamulla kouluun&nbsp;
+            <a href="indexAsmalampiLatostenmaki0730.html" target="paaframe">8:15</a>
+          </div>        
+        </td>
+        <td>
+          <div align="center">Aamulla kouluun&nbsp;
+            <a href="indexAsmalampiLatostenmaki0825.html" target="paaframe">9:05</a>
+          </div>        
+        </td>
+        <td>
+          <div align="center">Iltapäivällä koulusta&nbsp;
+            <a href="indexLatostenmakiAsmapampi1320.html" target="paaframe">13:15</a>
+          </div>        
+        </td>
+        <td>
+          <div align="center"></divalign>Iltapäivällä koulusta&nbsp;
+            <a href="indexLatostenmakiAsmapampi1420.html" target="paaframe">14:15</a>
           </div>
-        </div>
-        <div class="minutes">
-          <div class="current">
-            <div class="hand"></div>
-          </div>
-        </div>
-        <div class="seconds">
-        <div class="current">
-          <div class="hand"></div>
-        </div>
-      </div>
-      </div>
+        </td>
+      </tr>
+    </table>
+    <div align="center">
+      <iframe akign="center" name="paaframe" src="indexAsmalampiLatostenmaki0730.html" 
+      width="90%" 
+      height="1000"
+      scrolling="yes">
+    </iframe>
     </div>
+
+    <div class="indeksi">Kello nyt:</div>
+    <div class="indeksi"id="kéllonaikanyt"></div>
+    <div class="indeksi">Sivullani näet nopeimmat bussit Asmalammilta Jyskän koululle ja takaisin.</div>
+    <div class="indeksi">Valitse aamulla kellonaika jolloin koulu alkaa, sivuni näyttää lähimmät vuorot.</div>
+    <div class="indeksi">Koulun loputtua voit valita kellonajan jolloin koulu loppuu.</div>
+    <div class="indeksi">Sivuni näyttää lähimmät bussivuorot kotiin.</div>
+    <div class="indeksi">Ja tietysti bussivuoroja voi tutkia muutenkin.
+    <div class="indeksi">Aloitusnäkymään pääset päivittämällä sivun</div>
+    <div class="indeksi"><br></div>
+      
+
+    <div class="b c outer">
+      <noscript>
+          <div class="b c" style="color:red;font-size:24px">This clock needs JavaScript</div>
+      </noscript>
+      <div class="b c circle" id="off">        
+          <div class="b n">
+              <span class="b ib tn">7</span>
+              <span class="b ib tn">1</span>
+          </div>
+          <div class="b n">            
+              <span class="b ib tn">8</span>
+              <span class="b ib tn">2</span>
+          </div>
+          <div class="b n">
+              <span class="b ib tn">9</span>
+              <span class="b ib tn">3</span>
+          </div>
+          <div class="b n">
+              <span class="b ib tn">10</span>
+              <span class="b ib tn">4</span>
+          </div>
+          <div class="b n">
+              <span class="b ib tn">11</span>
+              <span class="b ib tn">5</span>
+          </div>
+          <div class="b n">
+              <span class="b ib tn">12</span>
+              <span class="b ib tn">6</span>
+          </div>
+          <div class="b c needle short" id="hour"></div>
+          <div class="b c needle medium" id="minute"></div>
+          <div class="b c needle long" id="second">
+              <div class="b c pivot"></div>
+          </div>
+          <div class="b c br"></div>
+      </div>
+      <p class="b c dn" id="note"><small> <!-- Paina kelloa saadaksesi sen äänettömälle--></small></p>    
   </div>
-  <div class="clock" class="center">
-    <div class="hours">
-        <div class="first">
-            <div class="number">0</div>
-        </div>
-        <div class="second">
-            <div class="number">0</div>
-        </div>
-    </div>
-    <div class="tick">:</div>
-    <div class="minutes">
-        <div class="first">
-            <div class="number">0</div>
-        </div>
-        <div class="second">
-            <div class="number">0</div>
-        </div>
-    </div>
-    <div class="tick">:</div>
-    <div class="seconds">
-        <div class="first">
-            <div class="number">0</div>
-        </div>
-        <div class="second infinite">
-            <div class="number">0</div>
-        </div>
-    </div>
-</div>  
-    -->
-</body>
+
+  </body>
 </html>
