@@ -1,10 +1,45 @@
 body {
   font-family: Roboto, Arial, Georgia;
   font-size: 10px;
+   color: #d8d8d8;
 }
+.tieto {
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 1; 
+  width:25%;   
+}
+table {
+  table-layout: fixed ;
+  width: 85% ;
+}
+
+.hideko {
+  display: none;
+}
+.hidevaa {
+  display: none;
+}
+.hidevap {
+  display: none;
+}
+
+.atyyli:hover + .hideko {
+  display: block;
+  color: #7DC02D;
+}
+.atyyli:hover + .hidevaa {
+  display: block;
+  color: #7DC02D;
+}
+.atyyli:hover + .hidevap {
+  display: block;
+  color: #7DC02D;
+}
+
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: 1.5px;
   line-height: 1.8;  
   color: #7DC02D;
