@@ -1,11 +1,15 @@
 body {
   font-family: Roboto, Arial, Georgia;
   font-size: 10px;
-   color: #d8d8d8;
+  color: #d8d8d8;
 }
+
 .kouluaikana {
   font-style: italic;
+}
 
+iframe {
+ padding: 2em; 
 }
 table {
   table-layout: fixed ;
